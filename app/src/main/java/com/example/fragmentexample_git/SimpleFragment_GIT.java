@@ -21,6 +21,7 @@ public class SimpleFragment_GIT extends Fragment {
 
 
 
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -50,6 +51,11 @@ public class SimpleFragment_GIT extends Fragment {
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
+    }
+
+    public static SimpleFragment_GIT newInstance(){
+        SimpleFragment_GIT fragment_git = new SimpleFragment_GIT();
+        return fragment_git;
     }
 
     @Override
